@@ -9,6 +9,6 @@ class UserController extends Controller
 {
     function users()
     {
-        return DB::select('select * from users');
+        return DB::select('select * from user');
     }
 }
