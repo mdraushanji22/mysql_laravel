@@ -1,6 +1,6 @@
 <div>
     <h1>User List</h1>
-    <table border="1">
+    <table border=border-collapse>
         <tr>
             <th>ID</th>
             <th>Name</th>
