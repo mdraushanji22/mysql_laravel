@@ -26,5 +26,15 @@
     <form action="" method="post">
         @csrf
         <input type="text" name="name" placeholder="Enter name">
+        <br>
+        <br>
+        <input type="email" name="email" placeholder="Enter email">
+        <br>
+        <br>
+        <input type="text" name="batch" placeholder="Enter batch">
+        <br>
+        <br>
+        <button>Add Student</button>
+
     </form>
 </div>
