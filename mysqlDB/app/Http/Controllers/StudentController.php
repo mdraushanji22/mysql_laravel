@@ -9,6 +9,7 @@ class StudentController extends Controller
 {
     function getStudents()
     {
+        return view("Add student");
         $data = new \App\Models\Student;
         echo $data->testFun();
         $students = \App\Models\Student::all();

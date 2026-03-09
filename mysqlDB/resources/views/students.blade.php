@@ -23,7 +23,7 @@
     </table>
     <br>
     <br>
-    <form action="" method="post">
+    <form action="students" method="post">
         @csrf
         <input type="text" name="name" placeholder="Enter name">
         <br>

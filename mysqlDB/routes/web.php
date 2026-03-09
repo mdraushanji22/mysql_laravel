@@ -9,4 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('user', [UserController::class, 'users']);
-Route::get('students', [StudentController::class, 'getStudents']);
+Route::post('students', [StudentController::class, 'getStudents']);
