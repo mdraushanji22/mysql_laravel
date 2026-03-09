@@ -17,4 +17,7 @@
         </tr>
         @endforeach
     </table>
+    <form action="" method="post">
+
+    </form>
 </div>
