@@ -17,7 +17,10 @@
         </tr>
         @endforeach
     </table>
+    <br>
+    <br>
     <form action="" method="post">
-
+        @csrf
+        <input type="text" name="name" placeholder="Enter name">
     </form>
 </div>
