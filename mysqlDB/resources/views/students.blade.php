@@ -1,7 +1,7 @@
 <div>
     <h1>Students list</h1>
 
-    <table border="1">
+    <table border="1" style="border-collapse:collapse" ;>
         <tr>
             <th>ID</th>
             <th>Name</th>
