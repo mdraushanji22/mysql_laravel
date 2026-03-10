@@ -8,8 +8,5 @@ class student extends Model
 {
     // protected $table = "college_students";
 
-    function testFun()
-    {
-        return "Dummy Function Test";
-    }
+
 }
