@@ -9,4 +9,5 @@ Route::get('/', function () {
 });
 
 Route::get('user', [UserController::class, 'users']);
-Route::post('students', [StudentController::class, 'getStudents']);
+Route::get('students', [StudentController::class, 'getStudents']);
+Route::post('students', [StudentController::class, 'addStudent']);
