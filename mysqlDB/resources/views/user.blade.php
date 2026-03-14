@@ -17,7 +17,7 @@
         </tr>
         @endforeach
     </table>
-    <h1>User Data From API</h1>
+    <h1>User Data From MySQL Database</h1>
     <ul>
         <li>
             <span>Name:</span><span><b>{{$data->name}}</b></span>
