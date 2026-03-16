@@ -5,7 +5,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
-            <th>phone</th>
+            <th>phone number</th>
         </tr>
         @foreach($users as $user)
         <tr>
