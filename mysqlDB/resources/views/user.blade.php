@@ -3,8 +3,8 @@
     <table border="1" style="border-collapse:collapse;">
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
+            <th>Student Name</th>
+            <th>Email Id</th>
             <th>phone number</th>
         </tr>
         @foreach($users as $user)
