@@ -22,13 +22,13 @@
     <br>
     <form action="students" method="post">
         @csrf
-        <input type="text" name="name" placeholder="Enter name">
+        <input type="text" name="name" placeholder="Enter your name">
         <br>
         <br>
-        <input type="email" name="email" placeholder="Enter email">
+        <input type="email" name="email" placeholder="Enter your email">
         <br>
         <br>
-        <input type="text" name="batch" placeholder="Enter batch">
+        <input type="text" name="batch" placeholder="Enter your batch">
         <br>
         <br>
         <button>Add Students Data</button>
