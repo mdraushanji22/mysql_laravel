@@ -4,8 +4,8 @@
     <table border="1" style="border-collapse:collapse" ;>
         <tr>
             <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
+            <th> Student Name</th>
+            <th>Email id</th>
             <th>Batch</th>
         </tr>
         @foreach($data as $student)
