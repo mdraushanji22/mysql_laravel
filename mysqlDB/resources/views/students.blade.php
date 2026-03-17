@@ -31,7 +31,7 @@
         <input type="text" name="batch" placeholder="Enter your batch">
         <br>
         <br>
-        <button>Add Students Data</button>
+        <button>Add Students Data from this field</button>
 
     </form>
 </div>
