@@ -29,6 +29,6 @@ class StudentController extends Controller
     {
         // return ("student");
         $studentData = Student::all();
-        return view("student-list", ["students" => $studentData]);
+        return view("student-list", ["student" => $studentData]);
     }
 }
