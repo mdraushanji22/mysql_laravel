@@ -27,6 +27,8 @@ class StudentController extends Controller
     }
     function list()
     {
-        return ("student");
+        // return ("student");
+        // return view("student-list");
+        return $student = Student::all();
     }
 }
