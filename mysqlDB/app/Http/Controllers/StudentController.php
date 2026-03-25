@@ -25,4 +25,8 @@ class StudentController extends Controller
 
         return redirect('students');
     }
+    function list()
+    {
+        return ("student");
+    }
 }
