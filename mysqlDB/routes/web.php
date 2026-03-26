@@ -13,3 +13,4 @@ Route::get('students', [StudentController::class, 'getStudents']);
 Route::post('students', [StudentController::class, 'addStudent']);
 Route::get('list', [StudentController::class, 'list']);
 Route::get('delete/{id}', [StudentController::class, 'delete']);
+Route::get('edit/{id}', [StudentController::class, 'edit']);

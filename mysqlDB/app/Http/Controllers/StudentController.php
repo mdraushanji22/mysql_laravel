@@ -36,4 +36,9 @@ class StudentController extends Controller
         $isDeleted = Student::destroy($id);
         return redirect('list');
     }
+    function edit($id)
+    {
+        $student = Student::find($id);
+        return view('edit', ['data' => $student]);
+    }
 }
