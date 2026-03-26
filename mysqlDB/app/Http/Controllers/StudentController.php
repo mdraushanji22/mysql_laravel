@@ -23,12 +23,17 @@ class StudentController extends Controller
         $student->batch = $request->batch;
         $student->save();
 
-        return redirect('students');
+        return redirect('list');
     }
     function list()
     {
         // return ("student");
         $studentData = Student::all();
         return view("student-list", ["student" => $studentData]);
+    }
+    function delete($id)
+    {
+        $isDeleted = Student::destroy($id);
+        return redirect('list');
     }
 }
