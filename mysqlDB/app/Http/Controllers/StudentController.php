@@ -45,7 +45,7 @@ class StudentController extends Controller
     {
         $student = Student::find($id);
         $student->name = $request->name;
-        $student->email = $request->emai;;
+        $student->email = $request->email;
         $student->batch = $request->batch;
 
         if ($student->save()) {

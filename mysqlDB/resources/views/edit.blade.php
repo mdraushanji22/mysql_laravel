@@ -1,18 +1,20 @@
 <div>
     <h1>Update Student Data</h1>
-    <form action="" method="post">
+    <form action="{{ url('edit-student/'.$data->id) }}" method="POST">
         @csrf
-        <input type="hidden" name="_method" value="put">
+        @method('PUT')
+
         <input type="text" name="name" value="{{$data->name}}" />
-        <br>
-        <br>
+        <br><br>
+
         <input type="email" name="email" value="{{$data->email}}" />
-        <br>
-        <br>
+        <br><br>
+
         <input type="text" name="batch" value="{{$data->batch}}" />
-        <br>
-        <br>
+        <br><br>
+
         <button>Update</button>
         <a href="/list">Cancel</a>
+    </form>
     </form>
 </div>
