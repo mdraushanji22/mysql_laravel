@@ -43,6 +43,15 @@ class StudentController extends Controller
     }
     function editStudent(Request $request, $id)
     {
-        return $id;
+        $student = Student::find($id);
+        $student->name = $request->name;
+        $student->email = $request->emai;;
+        $student->batch = $request->batch;
+
+        if ($student->save()) {
+            return redirect('list');
+        } else {
+            return ('Upadted operation failed');
+        }
     }
 }
