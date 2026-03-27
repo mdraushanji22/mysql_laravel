@@ -1,5 +1,8 @@
 <div>
     <h1>Update Student Data</h1>
+    <form action="search" method="get">
+        <input type="text" name="search" placeholder="Enter search name">
+    </form>
     <form action="{{ url('edit-student/'.$data->id) }}" method="POST">
         @csrf
         @method('PUT')
