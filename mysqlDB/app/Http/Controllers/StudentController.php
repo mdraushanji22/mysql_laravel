@@ -54,4 +54,9 @@ class StudentController extends Controller
             return ('Upadted operation failed');
         }
     }
+    function search(Request $request)
+    {
+
+        return $request;
+    }
 }
