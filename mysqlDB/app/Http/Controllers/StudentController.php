@@ -58,5 +58,6 @@ class StudentController extends Controller
     {
 
         $studentData = Student::whare('name', 'like', "%$request->search%")->get();
+        return $studentData;
     }
 }
