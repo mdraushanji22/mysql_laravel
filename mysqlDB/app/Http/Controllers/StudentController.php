@@ -57,6 +57,6 @@ class StudentController extends Controller
     function search(Request $request)
     {
 
-        return $request;
+        $studentData = Student::whare('name', 'like', "%$request->search%")->get();
     }
 }
