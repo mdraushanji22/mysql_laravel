@@ -28,7 +28,7 @@ class StudentController extends Controller
     function list()
     {
         // return ("student");
-        $studentData = Student::all();
+        $studentData = Student::paginate(3);
         return view("student-list", ["student" => $studentData]);
     }
     function delete($id)
