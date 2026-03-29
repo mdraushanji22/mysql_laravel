@@ -33,4 +33,8 @@
     .w-5.h-5 {
         width: 20px;
     }
+
+    h1 {
+        color: greenyellow;
+    }
 </style>
