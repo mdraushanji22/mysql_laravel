@@ -35,6 +35,6 @@
     }
 
     h1 {
-        color: greenyellow;
+        color: green;
     }
 </style>
