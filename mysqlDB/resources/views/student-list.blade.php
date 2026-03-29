@@ -41,5 +41,9 @@
     button {
         color: green;
         background-color: white;
+        padding: 2px;
+        border: none;
+        border: 1px solid black;
+        border-radius: 2px;
     }
 </style>
