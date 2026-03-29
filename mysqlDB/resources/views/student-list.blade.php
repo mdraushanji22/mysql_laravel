@@ -37,4 +37,9 @@
     h1 {
         color: green;
     }
+
+    button {
+        color: green;
+        background-color: white;
+    }
 </style>
