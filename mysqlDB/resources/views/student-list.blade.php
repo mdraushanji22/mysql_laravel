@@ -4,31 +4,34 @@
         <input type="text" name="search" placeholder="Enter search name" value="{{@$search}}" />
         <button>search</button>
     </form>
+    <form action="" method="post">
+        <table border="1" style="border-collapse:collapse" ;>
+            <tr>
+                <th>Select</th>
+                <th>ID</th>
+                <th> Student</th>
+                <th>Email</th>
+                <th>Batch</th>
+                <th>Delete Student</th>
+                <th>Update Student</th>
 
-    <table border="1" style="border-collapse:collapse" ;>
-        <tr>
-            <th>Select</th>
-            <th>ID</th>
-            <th> Student</th>
-            <th>Email</th>
-            <th>Batch</th>
-            <th>Delete Student</th>
-            <th>Update Student</th>
+            </tr>
+            @foreach($student as $students)
+            <tr>
+                <td><input type="checkbox" name="ids[]" value="{{$students->id}}"></td>
+                <td>{{$students->id}}</td>
+                <td>{{$students->name}}</td>
+                <td>{{$students->email}}</td>
+                <td>{{$students->batch}}</td>
+                <td><a href="{{'delete/' .$students->id}}">Delete</a></td>
+                <td><a href="{{'edit/' .$students->id}}">Edit</a></td>
 
-        </tr>
-        @foreach($student as $students)
-        <tr>
-            <td><input type="checkbox" name="ids[]" value="{{$students->id}}"></td>
-            <td>{{$students->id}}</td>
-            <td>{{$students->name}}</td>
-            <td>{{$students->email}}</td>
-            <td>{{$students->batch}}</td>
-            <td><a href="{{'delete/' .$students->id}}">Delete</a></td>
-            <td><a href="{{'edit/' .$students->id}}">Edit</a></td>
-
-        </tr>
-        @endforeach
-    </table>
+            </tr>
+            @endforeach
+        </table>
+    </form>
+    <br>
+    <br>
     {{$student->links()}}
 </div>
 <style>
