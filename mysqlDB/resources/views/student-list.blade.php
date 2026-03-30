@@ -4,7 +4,7 @@
         <input type="text" name="search" placeholder="Enter search name" value="{{@$search}}" />
         <button class="btn">search</button>
     </form>
-    <form action="" method="post">
+    <form action="delete-multi" method="post">
         @csrf
         <button>Delete</button>
         <br>
