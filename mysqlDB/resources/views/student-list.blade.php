@@ -2,9 +2,12 @@
     <h1>Students List</h1>
     <form action="search" method="get">
         <input type="text" name="search" placeholder="Enter search name" value="{{@$search}}" />
-        <button>search</button>
+        <button class="btn">search</button>
     </form>
     <form action="" method="post">
+        @csrf
+        <button>Delete</button>
+        <br>
         <table border="1" style="border-collapse:collapse" ;>
             <tr>
                 <th>Select</th>
@@ -43,7 +46,7 @@
         color: green;
     }
 
-    button {
+    .btn {
         color: green;
         background-color: white;
         padding: 2px;
