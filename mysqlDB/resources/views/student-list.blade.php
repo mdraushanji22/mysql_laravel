@@ -18,7 +18,7 @@
         </tr>
         @foreach($student as $students)
         <tr>
-            <td><input type="checkbox" name="ids[]" id=""></td>
+            <td><input type="checkbox" name="ids[]" value="{{$students->id}}"></td>
             <td>{{$students->id}}</td>
             <td>{{$students->name}}</td>
             <td>{{$students->email}}</td>
