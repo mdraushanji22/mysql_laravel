@@ -7,6 +7,7 @@
 
     <table border="1" style="border-collapse:collapse" ;>
         <tr>
+            <th>Select</th>
             <th>ID</th>
             <th> Student</th>
             <th>Email</th>
@@ -17,6 +18,7 @@
         </tr>
         @foreach($student as $students)
         <tr>
+            <td><input type="checkbox" name="ids[]" id=""></td>
             <td>{{$students->id}}</td>
             <td>{{$students->name}}</td>
             <td>{{$students->email}}</td>
