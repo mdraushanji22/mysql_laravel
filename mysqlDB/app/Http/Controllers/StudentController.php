@@ -62,6 +62,11 @@ class StudentController extends Controller
     }
     function deleteMultiple(Request $request)
     {
-        return $request->input('ids');
+        $result = Student::destroy([$request->ids]);
+        if ($result) {
+            return redirect('list');
+        } else {
+            return ('Student Data not deleted');
+        }
     }
 }
