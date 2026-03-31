@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudentController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('user', [UserController::class, 'users']);
 Route::get('students', [StudentController::class, 'getStudents']);
@@ -17,3 +17,7 @@ Route::get('edit/{id}', [StudentController::class, 'edit']);
 Route::put('edit-student/{id}', [StudentController::class, 'editStudent']);
 Route::get('search', [StudentController::class, 'search']);
 Route::post('delete-multi', [StudentController::class, 'deleteMultiple']);
+
+Route::get('/', function () {
+    return view('home');
+});
