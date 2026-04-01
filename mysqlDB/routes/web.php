@@ -18,6 +18,6 @@ Route::put('edit-student/{id}', [StudentController::class, 'editStudent']);
 Route::get('search', [StudentController::class, 'search']);
 Route::post('delete-multi', [StudentController::class, 'deleteMultiple']);
 
-Route::get('/', function () {
-    return view('home');
+Route::get('about', function () {
+    return view('about');
 });
