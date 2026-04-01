@@ -21,3 +21,6 @@ Route::post('delete-multi', [StudentController::class, 'deleteMultiple']);
 Route::get('about', function () {
     return view('about');
 });
+Route::get('home', function () {
+    return view('home');
+});
