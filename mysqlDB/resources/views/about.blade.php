@@ -4,7 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Page</title>
+    <style>
+        .footer {
+            position: absolute;
+            bottom: 0;
+            background-color: skyblue;
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
