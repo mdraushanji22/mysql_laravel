@@ -10,7 +10,7 @@
     <h1>My Website Header</h1>
 
     <hr>
-    @yield('contents')
+    @yield('content')
     <hr>
 
     <hr>
