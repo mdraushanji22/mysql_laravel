@@ -2,4 +2,4 @@
 mysql database connect with laravel.
 ## How to connect mySQL database in PHP Laravel 
 ## Mysql used in backend data store
-
+## mysql used for data store
